@@ -1,0 +1,84 @@
+extends base
+
+block vars
+    - var siteTitle = 'Stomat';
+
+block content
+    
+    include header
+
+    main.main 
+        section.main-page
+            .container 
+                img(src="img/tooth.png" alt="tooth")
+                h1.main-page__main-title Стоматологічна клініка GeoGeo Стоматологія для всієї сім'ї
+                a.btn-link(href="#") Детальніше
+        //- Company Description 
+        section.company-desc.padding-container.dark-section
+            .container.flex
+                .flex.company-desc__title-wrapper
+                    img(src="img/tooth.png" alt="tooth")
+                    h2.company-desc__title Стоматологічна клініка GeoGeo 
+                    div 
+                        p.company-desc__desc У нашій клініці представлені всі напрямки стоматології: терапія, ортопедія, ортодонтія, хірургія, імплантологія, пародонтологія, естетична стоматологія, дитяча стоматологія та гігієна порожнини рота. 
+                        a.a-link(href="#") 3D-тур &rarr; 
+        //- Masters
+        section.masters.padding-container
+            .container
+                h3.title Фахівці
+                .masters__items.flex
+                    .masters__item
+                        img(src="img/master1.jpg" alt="")
+                        h4.subtitle ПІБ
+                        p.masters__desc Стоматолог
+                    .masters__item
+                        img(src="img/master2.jpg" alt="")
+                        h4.subtitle ПІБ
+                        p.masters__desc Стоматолог
+                    .masters__item
+                        img(src="img/master3.jpg" alt="")
+                        h4.subtitle ПІБ
+                        p.masters__desc Стоматолог
+                p 
+                    a.btn-link.masters__btn-link(href="#") Наша команда
+        //- Services 
+        section.services.dark-section.padding-container
+            .container
+                h3.title Послуги клініки GeoGeo
+                .services__items.flex
+                    .services__item
+                        img(src="img/services-item1.jpg" alt="")
+                        h4.subtitle Терапія
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        a.a-link(href="#") Докладніше
+                    .services__item
+                        img(src="img/services-item2.jpg" alt="")
+                        h4.subtitle Терапія
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        a.a-link(href="#") Докладніше
+                    .services__item
+                        img(src="img/services-item3.jpg" alt="")
+                        h4.subtitle Терапія
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        a.a-link(href="#") Докладніше    
+                p
+                    a.btn-link(href="#") Всі послуги
+        //- Contacts
+        section.contacts.padding
+            .container.flex
+                div
+                    h3.title Контакти
+                    p Стоматологічна клініка Geo Geo
+                    p Адреса
+                    p
+                        a(href="tel:0560678974") (056) 067-89-74
+                    p
+                        a(href="email:admin@geo.ua") admin@geo.ua
+                div
+                    iframe.maps.embed-responsive.embed-responsive-16by9(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1373.799413660781!2d30.740561310893245!3d46.476453765483186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319c8555913d%3A0xfe244713595dd721!2z0JDQu9GM0L_QuNC90LA!5e0!3m2!1sru!2sua!4v1702585959352!5m2!1sru!2sua" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                        p Твій браузер встарів для відображення елементу
+    
+    include footer
+
+
+

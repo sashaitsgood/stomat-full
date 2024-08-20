@@ -1,0 +1,18 @@
+block vars
+	-var menuValues = ['Про клініку', 'Команда', 'Послуги', 'Вартість', 'Обладнання', 'Контакти', 'Відгуки'];
+
+header.header.dark-section.padding.flex
+	button#burger.burger-btn
+		span 
+		span 
+		span 
+	.container.flex
+		nav.nav.header__nav 
+			ul.flex 
+				each value in menuValues 
+					li #{value}
+		.btn-block
+			button.modal-btn &#9745; Записатися на прийом
+			button#toggle-theme.btn-toggle D/L
+
+
